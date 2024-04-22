@@ -167,6 +167,7 @@ ul li a:hover {
   text-align: center;
   margin-top: 5rem;
   background-color: #fdf7ee;
+  overflow-y: hidden;
 }
 
 .gallery-container .gallery-head {
@@ -205,25 +206,6 @@ ul li a:hover {
   border-radius: 10px;
 }
 
-.gallery-container .button {
-  position: fixed; /* Tetapkan posisi tombol agar tetap terlihat di layar */
-  bottom: 20px; /* Jarak dari bawah layar */
-  left: 50%; /* Posisi horizontal tengah */
-  transform: translateX(-50%); /* Pusatkan tombol horizontal */
-  z-index: 999; /* Pastikan tombol berada di atas konten lain */
-  background: #222;
-  padding: 15px 40px;
-  border-radius: 10px;
-}
-
-.gallery-container .button a{
-  color: #ffffff;
-  font-size: 1.2em;
-  text-decoration: none;
-  font-weight: bolder;
-  letter-spacing: 3px;
-}
-
 .blog-heading {
   margin-top: 2rem;
   display: flex;
@@ -244,12 +226,13 @@ ul li a:hover {
   flex-direction: column;
   padding: 40px;
   border-bottom: 1px solid rgba(0,0,0,0.05);
+  background-color: #fdf7ee;
 }
 
 .blog-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin: 20px 0px;
   flex-wrap: wrap;
 }
@@ -308,6 +291,7 @@ ul li a:hover {
 .blog-text a {
   color: #222;
 }
+
 
 .blog-text a:hover {
   color: #aa6023;

@@ -42,16 +42,3 @@ function type() {
 // Memanggil fungsi type untuk memulai efek mengetik
 type();
 
-
-document.addEventListener('DOMContentLoaded', function() {
-  const moreButton = document.getElementById('moreButton');
-  const galleryContainer = document.querySelector('.gallery-container');
-
-  moreButton.addEventListener('click', function(event) {
-    event.preventDefault();
-    galleryContainer.style.overflowY = 'scroll'; // Aktifkan scroll pada container galeri
-    moreButton.style.display = 'none'; // Sembunyikan tombol "More" setelah ditekan
-  });
-});
-
-
