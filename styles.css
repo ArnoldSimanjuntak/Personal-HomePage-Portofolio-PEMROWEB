@@ -206,7 +206,11 @@ ul li a:hover {
 }
 
 .gallery-container .button {
-  margin: 40px 0 70px 0;
+  position: fixed; /* Tetapkan posisi tombol agar tetap terlihat di layar */
+  bottom: 20px; /* Jarak dari bawah layar */
+  left: 50%; /* Posisi horizontal tengah */
+  transform: translateX(-50%); /* Pusatkan tombol horizontal */
+  z-index: 999; /* Pastikan tombol berada di atas konten lain */
   background: #222;
   padding: 15px 40px;
   border-radius: 10px;
