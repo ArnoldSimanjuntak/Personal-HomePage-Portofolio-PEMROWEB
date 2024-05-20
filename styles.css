@@ -90,6 +90,9 @@ ul li a:hover {
 
 .section {
   background-color: var(--extra-light);
+  overflow: hidden;
+  opacity: 0;
+  animation: slideUp 1.7s ease-out forwards;
 }
 
 .section-container {
@@ -168,6 +171,9 @@ ul li a:hover {
   margin-top: 5rem;
   background-color: #fdf7ee;
   overflow-y: hidden;
+  overflow: hidden;
+  opacity: 0;
+  animation: slideUp 2s ease-out forwards;
 }
 
 .gallery-container .gallery-head {
@@ -227,6 +233,9 @@ ul li a:hover {
   padding: 40px;
   border-bottom: 1px solid rgba(0,0,0,0.05);
   background-color: #fdf7ee;
+  overflow: hidden;
+  opacity: 0;
+  animation: slideUp 2s ease-out forwards;
 }
 
 .blog-container {
@@ -303,6 +312,9 @@ ul li a:hover {
   background-color:#fdf7ee;
   padding: 50px;
   text-align: center;
+  overflow: hidden;
+  opacity: 0;
+  animation: slideUp 2s ease-out forwards;
 }
 
 .contact-container {
@@ -449,4 +461,15 @@ textarea:focus{
     grid-template-columns: 1fr;
   }
 
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(100%); /* Mulai dari di bawah */
+      opacity: 0; /* Mulai dari transparan */
+  }
+  to {
+      transform: translateY(0); /* Akhir di posisi asli */
+      opacity: 1; /* Akhir dengan gambar terlihat */
+  }
 }
